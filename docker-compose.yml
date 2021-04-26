@@ -1,0 +1,21 @@
+version: "3.5"
+
+services:
+         
+    toncat:
+        restart: always
+        image: tomcat:jre11-slim
+        container_name: toncat-container-jessica
+        volumes:
+            - ./webapps:/usr/local/tomcat/webapps/
+        ports:
+            - "8080:8080" 
+        expose:
+            - "8080"
+        networks:
+            - servico_jessica
+        command: ["catalina.sh", "run"]
+
+networks:
+    servico_jessica:
+        driver: bridge
