@@ -23,9 +23,9 @@
  /dolar{data}/{valor}|POST|Adiciona a cotação para a data especificada na URI
  /dolar/{data}/{valor|PUT|Altera a cotação para a data especificada na URI 
  
- *obs:* os formatos de data tratados são: *22/04/2021*,*22042021* ou *22.04.2021*. 
+ *obs:* os formatos de data tratados são: *22/04/2021*, *22042021* ou *22.04.2021*. 
  
- Exemplos:
+ *Exemplos:*
  
  /dolar/22/04/2021
  
